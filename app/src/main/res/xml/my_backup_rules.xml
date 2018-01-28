@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude
+        domain="database"
+        path="ProfilePic.db" />
+    <!-- Exclude the shared preferences file that contains the GCM registrationId -->
+    <exclude
+        domain="sharedpref"
+        path="USER_ACC.xml" />
+    <exclude
+        domain="sharedpref"
+        path="com.goh.weechien.HappinessDiary.Guidance.xml" />
+    <exclude
+        domain="sharedpref"
+        path="ANON_SIGN_IN.xml" />
+</full-backup-content>

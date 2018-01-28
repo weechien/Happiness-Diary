@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_layer"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/language_selection"
+        android:icon="@drawable/ic_language"
+        android:orderInCategory="2"
+        android:title="@string/language_selection"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_english"
+                android:orderInCategory="1"
+                android:title="@string/action_English"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_chinese"
+                android:orderInCategory="2"
+                android:title="@string/action_Chinese_Simplified"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>

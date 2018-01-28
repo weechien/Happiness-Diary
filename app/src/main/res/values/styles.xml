@@ -1,0 +1,133 @@
+<resources>
+    <!-- Style for Guidance Activity -->
+    <style name="Guidance" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Guidance</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Guidance</item>
+        <item name="colorAccent">@color/colorAccent_Guidance</item>
+        <item name="android:actionButtonStyle">@style/MyActionViewStyle</item>
+    </style>
+
+    <style name="Guidance.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Style for Bookmark Activity -->
+    <style name="Bookmark.NoActionBar" parent="Guidance.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Bookmark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Bookmark</item>
+        <item name="colorAccent">@color/colorAccent_Bookmark</item>
+    </style>
+
+    <!-- Style for Prayer Activity -->
+    <style name="Prayer.NoActionBar" parent="Guidance.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Prayer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Prayer</item>
+        <item name="colorAccent">@color/colorAccent_Prayer</item>
+    </style>
+
+    <!-- Style for Diary Activity -->
+    <style name="Diary.NoActionBar" parent="Guidance.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Diary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Diary</item>
+        <item name="colorAccent">@color/colorAccent_Diary</item>
+    </style>
+
+    <!-- Style for UserAccount Activity -->
+    <style name="UserAccount.NoActionBar" parent="Guidance.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_UserAccount</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_UserAccount</item>
+        <item name="colorAccent">@color/colorAccent_UserAccount</item>
+    </style>
+
+    <!-- Style for Toolbar -->
+    <style name="Guidance.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Style for Toolbar -->
+    <style name="Bookmark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>>
+
+    <style name="Guidance.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Style for Action View -->
+    <style name="MyActionViewStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:padding">12dip</item>
+    </style>
+
+    <style name="DarkAppBar" parent="Guidance.NoActionBar">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Style for Toolbar -->
+    <style name="DarkAppBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="DarkAppBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Style for Login screen -->
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/colorPrimary_Guidance</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent_Guidance</item>
+        <item name="colorButtonNormal">@color/colorAccent_Guidance</item>
+        <item name="colorControlNormal">@color/colorAccent_Guidance</item>
+        <item name="colorControlActivated">@color/colorAccent_Guidance</item>
+        <item name="colorControlHighlight">@color/colorAccent_Guidance</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">#ffaf00</item>
+        <item name="android:textColorSecondary">@color/colorSecondary</item>
+        <item name="android:windowBackground">@drawable/bg_login</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="passwordToggleTint">@color/colorAccent_Guidance</item>
+        <item name="android:textColorHint">@color/colorAccent_Guidance</item>
+    </style>
+
+    <style name="FirebaseUI.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FirebaseUI.Text.Link">
+        <item name="android:textColor">@color/colorAccent_Guidance</item>
+    </style>
+
+    <style name="FirebaseUI.TextInputLayout.PasswordField">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="passwordToggleTint">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorAccent_Guidance</item>
+        <item name="colorControlNormal">@color/colorAccent_Guidance</item>
+        <item name="colorControlActivated">@color/colorAccent_Guidance</item>
+        <item name="colorControlHighlight">@color/colorAccent_Guidance</item>
+    </style>
+
+    <style name="FirebaseUI.TextInputLayout.EmailField">
+        <item name="colorControlNormal">@color/colorAccent_Guidance</item>
+        <item name="colorControlActivated">@color/colorAccent_Guidance</item>
+        <item name="colorControlHighlight">@color/colorAccent_Guidance</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">#333333</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.HappinessDiary" parent="FirebaseUI.Button.AccountChooser">
+        <item name="android:drawableLeft">@drawable/ic_birdie_layer</item>
+        <item name="android:background">@drawable/happiness_sign_up</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.Anonymous" parent="FirebaseUI.Button.AccountChooser">
+        <item name="android:drawableLeft">@drawable/anonymous_user_layer</item>
+        <item name="android:background">@drawable/anonymous_login</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

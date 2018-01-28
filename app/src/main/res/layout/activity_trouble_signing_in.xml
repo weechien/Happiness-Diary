@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login">
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/my_password_reset_progress"
+        app:cpb_colors="@array/color_SGM"
+        app:cpb_stroke_width="15dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/my_password_reset_form"
+        style="@style/FirebaseUI.WrapperStyle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trouble_signing_in_textview"
+            style="@style/FirebaseUI.Text.BodyText"
+            android:text="@string/please_select_signin_helper" />
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/resend_email_verification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/resend_verification_email"/>
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/reset_password"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/my_email_layout"
+            style="@style/FirebaseUI.TextInputLayout.EmailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/my_email"
+                android:maxLines="1"
+                style="@style/FirebaseUI.TextInputEditText.EmailField" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fui_submit_button_margin_top"
+            android:gravity="right"
+            tools:ignore="RtlHardcoded">
+
+            <Button
+                android:id="@+id/button_send_email"
+                style="@style/FirebaseUI.Button"
+                android:text="@string/fui_button_text_send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

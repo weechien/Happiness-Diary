@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_Guidance">#2d5d82</color>
+    <color name="colorPrimaryDark_Guidance">#21425d</color>
+    <color name="colorAccent_Guidance">#01bcd5</color>
+
+    <color name="colorPrimary_Bookmark">#4dd0e1</color>
+    <color name="colorPrimaryDark_Bookmark">#009faf</color>
+    <color name="colorAccent_Bookmark">#EE4266</color>
+
+    <color name="colorPrimary_Prayer">#FFA000</color>
+    <color name="colorPrimaryDark_Prayer">#F57F17</color>
+    <color name="colorAccent_Prayer">#0E1428</color>
+
+    <color name="colorPrimary_Diary">#C3423F</color>
+    <color name="colorPrimaryDark_Diary">#8C2E2C </color>
+    <color name="colorAccent_Diary">#3A3335</color>
+
+    <color name="colorPrimary_UserAccount">#2d4e8c</color>
+    <color name="colorPrimaryDark_UserAccount">#00275e </color>
+    <color name="colorAccent_UserAccount">#607abd</color>
+
+    <color name="navTextDefault">#666666</color>
+    <color name="navRipple">#D5D5D5</color>
+    <color name="navBackgroundSelected">#EFEFEF</color>
+
+    <!-- Text and shadow colors for the appbar's title -->
+    <color name="grey_font">#FFFFFF</color>
+    <color name="text_shadow">#000000</color>
+
+    <!-- Colors of the loading bar while waiting for the image to download -->
+    <color name="blue_sgm">#01bcd5</color>
+    <color name="yellow_sgm">#FFFF01</color>
+    <color name="red_sgm">@android:color/holo_red_light</color>
+
+    <integer-array name="color_SGM">
+        <item>@color/blue_sgm</item>
+        <item>@color/yellow_sgm</item>
+        <item>@color/red_sgm</item>
+    </integer-array>
+
+    <!-- Colors of the card view based on month -->
+    <color name="Month1">#f0f8ff</color>
+    <color name="Month2">#FFE9E9</color>
+    <color name="Month3">#eeeeee</color>
+    <color name="Month4">#DEFFDB</color>
+    <color name="Month5">#f5f5dc</color>
+    <color name="Month6">#f3e1cb</color>
+    <color name="Month7">#e4eef5</color>
+    <color name="Month8">#d7bbbb</color>
+    <color name="Month9">#ECDAEC</color>
+    <color name="Month10">#faebd7</color>
+    <color name="Month11">#fdf7e7</color>
+    <color name="Month12">#EDDDDD</color>
+
+    <color name="colorSecondary">#0a0b29</color>
+    <color name="colorPinkAccent">#FF4081</color>
+
+</resources>
+
+

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goh.weechien.HappinessDiary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="io.branch.branchandroiddemo.BranchAppClass"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:theme="@style/Guidance.NoActionBar">
+
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Branch URI scheme -->
+            <intent-filter>
+                <data android:scheme="happiness.diary.sgm" android:host="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="fzjf.app.link" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EmailLogin"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_email_login"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".TroubleSigningIn"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_password_reset"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".UserAccount"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_view_user_account"
+            android:launchMode="singleTop"
+            android:theme="@style/UserAccount.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.Guidance" />
+        </activity>
+        <activity
+            android:name=".UserAccountProfilePic"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile_photo"
+            android:launchMode="singleTop"
+            android:theme="@style/DarkAppBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.UserAccount" />
+        </activity>
+        <activity
+            android:name=".Guidance"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Guidance.NoActionBar" />
+        <activity
+            android:name=".Bookmark"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/guidance_bookmark"
+            android:launchMode="singleTop"
+            android:theme="@style/Bookmark.NoActionBar"/>
+        <activity
+            android:name=".Prayer"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_prayer"
+            android:launchMode="singleTop"
+            android:theme="@style/Prayer.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.Guidance" />
+        </activity>
+        <activity
+            android:name=".Diary"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_diary"
+            android:launchMode="singleTop"
+            android:theme="@style/Diary.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.Guidance" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:theme="@style/Guidance.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_about"
+            android:launchMode="singleTop"
+            android:theme="@style/Guidance.NoActionBar" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/search_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Guidance.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.goh.weechien.HappinessDiary.Guidance" />
+        </activity>
+
+        <receiver
+            android:name=".GuidanceNotiRec"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".CancelNotiRec"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".GuidanceNotiSvc"
+            android:exported="false" />
+
+        <receiver
+            android:name=".GuidanceAlarmChgRec"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.goh.weechien.HappinessDiary.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- Branch init -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_hgFIm527ozEAdXV4gV08hjhmsBgxUnug" />
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_nbAOl431ezyEm9LYn4puNbenvrovOaBE" />
+
+        <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+        <!-- Branch install referrer tracking -->
+        <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

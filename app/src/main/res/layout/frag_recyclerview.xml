@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_recycler_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yayandroid.parallaxrecyclerview.ParallaxRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frag_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/dummyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

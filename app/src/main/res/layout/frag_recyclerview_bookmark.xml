@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frag_recycler_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yayandroid.parallaxrecyclerview.ParallaxRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frag_recycler_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/dummyView_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/dummyView_imageView_bookmark"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_satisfied" />
+
+        <TextView
+            android:id="@+id/dummyView_textView_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textColor="#999" />
+
+    </LinearLayout>
+
+</RelativeLayout>

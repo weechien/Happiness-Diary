@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "259457505917",
+    "firebase_url": "https://diary-of-happiness.firebaseio.com",
+    "project_id": "diary-of-happiness",
+    "storage_bucket": "diary-of-happiness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259457505917:android:c97327c2e197f065",
+        "android_client_info": {
+          "package_name": "com.goh.weechien.HappinessDiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259457505917-nn7gjaes2cie9d8g2u5s3psit3ojb9tp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goh.weechien.HappinessDiary",
+            "certificate_hash": "bbab8675a05f3d194adce68243cd122c029c2bd4"
+          }
+        },
+        {
+          "client_id": "259457505917-ft079aupar2jhhaiohjgl1apuoqmrpau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goh.weechien.HappinessDiary",
+            "certificate_hash": "6a5c0c5f1ca1fd93873b22d58846c47245d87118"
+          }
+        },
+        {
+          "client_id": "259457505917-bj3lt73hcggr507mqvc4dfl987ifqlsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqAlzuhpa34lpJvK7DOkH0QiWR9rwoJ1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259457505917-bj3lt73hcggr507mqvc4dfl987ifqlsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
