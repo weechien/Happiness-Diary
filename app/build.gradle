@@ -15,14 +15,14 @@ android {
         }
     }
     compileSdkVersion 27
-    buildToolsVersion '27.0.2'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.goh.weechien.HappinessDiary"
         minSdkVersion 16
         targetSdkVersion 27
         resConfigs "auto"
-        versionCode 23
-        versionName "23.0.0"
+        versionCode 24
+        versionName "24.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
